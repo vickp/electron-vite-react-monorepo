@@ -24,13 +24,13 @@ export default function Web() {
         <div className="text-2xl italic">Wanna see some typesafe data?</div>
         <div>
           <span className="font-bold">{"Yerba version: "}</span>
-          {window.yerba.version}
+          {window.application.version}
         </div>
         <div>
           <span className="font-bold">
             {"Hashed Yerba version using node's builtin crypto: "}
           </span>
-          {window.nodeCrypto.sha256sum(window.yerba.version.toString())}
+          {window.nodeCrypto.sha256sum(window.application.version.toString())}
         </div>
         <div className="absolute bottom-0 right-0 p-4 w-full flex justify-center">
           Quickly hacked together by Theo

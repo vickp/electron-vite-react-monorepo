@@ -14,12 +14,12 @@ const SafeAppContents = ({ Component, pageProps }: AppProps) => {
   }
 
   // Lock out users on old versions
-  if (window?.yerba?.version < 0.1) {
+  if (window?.application?.version < 0.1) {
     return <div>Please update your app</div>;
   }
 
   // Lock out SSR and browser users
-  if (typeof window === "undefined" || !window?.yerba?.version) {
+  if (typeof window === "undefined" || !window?.application?.version) {
     return <div>Please use the app</div>;
   }
 

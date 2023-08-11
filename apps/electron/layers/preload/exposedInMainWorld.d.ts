@@ -1,5 +1,5 @@
 interface Window {
-    readonly yerba: { version: number; };
+    readonly application: { version: number; };
     /**
      * Safe expose node.js API
      * @example

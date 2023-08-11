@@ -7,7 +7,7 @@ import { sha256sum } from "/@/sha256sum";
 import * as fs from "fs";
 
 // Expose version number to renderer
-contextBridge.exposeInMainWorld("yerba", { version: 0.1 });
+contextBridge.exposeInMainWorld("application", { version: 0.1 });
 
 /**
  * The "Main World" is the JavaScript context that your main renderer code runs in.
